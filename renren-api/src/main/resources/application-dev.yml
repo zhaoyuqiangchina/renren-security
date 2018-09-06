@@ -1,11 +1,23 @@
 spring:
+#  datasource:
+#    type: com.alibaba.druid.pool.DruidDataSource
+#    driverClassName: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/renren_security?serverTimezone=UTC&characterEncoding=utf-8
+#    username: root
+#    password: MyPass@123456
+#
+#    jackson:
+#      time-zone: GMT+8
+#      date-format: yyyy-MM-dd HH:mm:ss
+#    resources:
+#      static-locations: classpath:/static/,classpath:/views/
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driverClassName: com.mysql.jdbc.Driver
     druid:
-      url: jdbc:mysql://localhost:3306/renren_security?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8
-      username: renren
-      password: 123456
+      url: jdbc:mysql://localhost:3306/renren_security?serverTimezone=UTC&characterEncoding=utf-8
+      username: root
+      password: MyPass@123456
       initial-size: 10
       max-active: 100
       min-idle: 10

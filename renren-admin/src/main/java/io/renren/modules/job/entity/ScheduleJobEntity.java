@@ -27,8 +27,8 @@ import java.util.Date;
 /**
  * 定时任务
  *
- * @author Mark sunlightcs@gmail.com
- * @since 1.2.0 2016-11-28
+ * @author ZYQ
+ * @since
  */
 @TableName("schedule_job")
 public class ScheduleJobEntity implements Serializable {

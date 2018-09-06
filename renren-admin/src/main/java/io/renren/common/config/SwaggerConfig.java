@@ -23,6 +23,7 @@ import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
 import springfox.documentation.service.ApiInfo;
+import springfox.documentation.service.Contact;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
@@ -30,8 +31,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 /**
  * Swagger配置
  *
- * @author Mark sunlightcs@gmail.com
- * @since 3.0.0 2018-01-16
+ * @author ZYQ
  */
 @Configuration
 @EnableSwagger2
@@ -52,11 +52,12 @@ public class SwaggerConfig{
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-            .title("人人开源")
-            .description("renren-admin文档")
-            .termsOfServiceUrl("http://www.renren.io")
-            .version("3.2.0")
-            .build();
+                .title("Spring Boot2.0中使用Swagger2构建RESTFul APIs")
+                .description("")
+                .termsOfServiceUrl("")
+                .contact(new Contact("zyq",null,"99171664@qq.com"))
+                .version("1.0")
+                .build();
     }
 
 }

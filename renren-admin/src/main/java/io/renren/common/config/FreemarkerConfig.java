@@ -28,8 +28,8 @@ import java.util.Properties;
 /**
  * Freemarker配置
  *
- * @author Mark sunlightcs@gmail.com
- * @since 3.0.0 2017-09-28
+ * @author ZYQ
+ * @since
  */
 @Configuration
 public class FreemarkerConfig {
